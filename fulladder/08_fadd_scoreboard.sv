@@ -1,4 +1,6 @@
 class scoreboard;
+  bit exp_sum;
+  bit exp_c_out;
   
   mailbox mon2sco;
   
@@ -17,11 +19,11 @@ class scoreboard;
       
       mon2sco.get(tr);
       
-      //exp_sum = tr.a ^ tr.b ^ tr.c_in;
-      //exp_c_out = (tr.a & tr.b) | (tr.b & tr.c_in) | (tr.c_in &  tr.a);
+      exp_sum = tr.a ^ tr.b ^ tr.c_in;
+      exp_c_out = (tr.a & tr.b) | (tr.b & tr.c_in) | (tr.c_in &  tr.a);
       
-      //if(tr.sum !== exp_sum || tr.c_out !== exp_c_out)begin
-      if({tr.c_out,tr.sum} == tr.a + tr.b + tr.c_in)begin
+      if(tr.sum == exp_sum && tr.c_out == exp_c_out)begin
+      //if({tr.c_out,tr.sum} == tr.a + tr.b + tr.c_in)begin
         $display("scoreboard pass");
       end
       else begin
