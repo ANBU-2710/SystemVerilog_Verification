@@ -31,81 +31,73 @@ endmodule
 
 /*
 ------generator------
-d = 1, q = 0
+rst = 1,d = 0, q = 0
 ------generator------
-d = 0, q = 0
+rst = 0,d = 1, q = 0
 ------driver------
-d = 1, q = 0
+rst = 1,d = 0, q = 0
 ------monitor------
-d = 1, q = 0
-scoreboard fail
-
-------generator------
-d = 1, q = 0
-------generator------
-d = 1, q = 0
-------driver------
-d = 0, q = 0
-------monitor------
-d = 0, q = 1
-scoreboard fail
-
-------generator------
-d = 0, q = 0
-------generator------
-d = 0, q = 0
-------driver------
-d = 1, q = 0
-------monitor------
-d = 1, q = 0
-scoreboard fail
-
-------generator------
-d = 1, q = 0
-------generator------
-d = 1, q = 0
-------driver------
-d = 1, q = 0
-------monitor------
-d = 1, q = 1
+rst = 1,d = 0, q = 0
 scoreboard passed
-
 ------generator------
-d = 0, q = 0
+rst = 1,d = 1, q = 0
 ------generator------
-d = 0, q = 0
+rst = 1,d = 0, q = 0
 ------driver------
-d = 0, q = 0
+rst = 0,d = 1, q = 0
 ------monitor------
-d = 0, q = 1
+rst = 0,d = 1, q = 0
 scoreboard fail
-
+------generator------
+rst = 0,d = 0, q = 0
+------generator------
+rst = 0,d = 1, q = 0
 ------driver------
-d = 0, q = 0
+rst = 1,d = 1, q = 0
 ------monitor------
-d = 0, q = 0
-scoreboard passed
-
-------driver------
-d = 1, q = 0
-------monitor------
-d = 1, q = 0
+rst = 1,d = 1, q = 1
 scoreboard fail
-
+------generator------
+rst = 1,d = 1, q = 0
+------generator------
+rst = 1,d = 0, q = 0
 ------driver------
-d = 1, q = 0
+rst = 1,d = 0, q = 0
 ------monitor------
-d = 1, q = 1
+rst = 1,d = 0, q = 0
 scoreboard passed
-
+------generator------
+rst = 0,d = 1, q = 0
+------generator------
+rst = 0,d = 0, q = 0
 ------driver------
-d = 0, q = 0
+rst = 0,d = 0, q = 0
 ------monitor------
-d = 0, q = 1
+rst = 0,d = 0, q = 0
+scoreboard passed
+------driver------
+rst = 0,d = 1, q = 0
+------monitor------
+rst = 0,d = 1, q = 0
 scoreboard fail
-
 ------driver------
-d = 0, q = 0
+rst = 1,d = 1, q = 0
 ------monitor------
-d = 0, q = 0
+rst = 1,d = 1, q = 1
+scoreboard fail
+------driver------
+rst = 1,d = 0, q = 0
+------monitor------
+rst = 1,d = 0, q = 0
 scoreboard passed
+------driver------
+rst = 0,d = 1, q = 0
+------monitor------
+rst = 0,d = 1, q = 0
+scoreboard fail
+------driver------
+rst = 0,d = 0, q = 0
+------monitor------
+rst = 0,d = 0, q = 1
+scoreboard fail
+*/
