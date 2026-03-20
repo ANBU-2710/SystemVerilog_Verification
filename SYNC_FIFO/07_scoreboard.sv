@@ -140,7 +140,7 @@ class scoreboard;
         
         else begin
           if(testcase_name == "rw_almost_full")begin
-            $display("==scoreboard==[%s] | the concurrent read write executed perfectly on almost full fifo  |",testcase_name);
+            $display("==scoreboard==[%s] | the simultenous read write executed successfully on almost full fifo  |",testcase_name);
           end
           exp_rdata = fifo.pop_front();
           fifo.push_back(tr.data_in);
